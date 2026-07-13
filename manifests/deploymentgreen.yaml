@@ -30,5 +30,5 @@ spec:
         - /bin/sh
         - -c
         - |
-          echo "<h1 style='color:green'>GREEN VERSION</h1>" > /usr/share/nginx/html/index.html
+          echo "<h1 style='color:green'>GREEN VERSION222</h1>" > /usr/share/nginx/html/index.html
           nginx -g 'daemon off;'
