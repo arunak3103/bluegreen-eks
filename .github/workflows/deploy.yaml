@@ -56,7 +56,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add manifests/deployment-blue.yaml
+          git add manifests/deploymentblue.yaml
 
           git diff --cached --quiet || git commit -m "Update image tag ${{ github.sha }}"
 
