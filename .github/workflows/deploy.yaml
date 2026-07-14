@@ -49,7 +49,7 @@ jobs:
 
       - name: Update Deployment Manifest
         run: |
-          sed -i "s|image:.*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/$ECR_REPOSITORY:${{ github.sha }}|g" manifests/deployment-blue.yaml
+          sed -i "s|image:.*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/$ECR_REPOSITORY:${{ github.sha }}|g" manifests/deploymentblue.yaml
 
       - name: Commit Manifest Changes
         run: |
