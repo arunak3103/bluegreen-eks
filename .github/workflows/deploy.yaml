@@ -49,14 +49,14 @@ jobs:
 
       - name: Update Deployment Manifest
         run: |
-          sed -i "s|image:.*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/$ECR_REPOSITORY:${{ github.sha }}|g" manifests/deploymentblue.yaml
+          sed -i "s|image:.*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/$ECR_REPOSITORY:${{ github.sha }}|g" manifests/deploymentgreen.yaml
 
       - name: Commit Manifest Changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add manifests/deploymentblue.yaml
+          git add manifests/deploymentgreen.yaml
 
           git diff --cached --quiet || git commit -m "Update image tag ${{ github.sha }}"
 
