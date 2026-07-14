@@ -26,9 +26,4 @@ spec:
         ports:
         - containerPort: 80
 
-        command:
-        - /bin/sh
-        - -c
-        - |
-          echo "<h1 style='color:green'>GREEN ARUN VERSION</h1>" > /usr/share/nginx/html/index.html
-          nginx -g 'daemon off;'
+      
