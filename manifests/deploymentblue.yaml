@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 467685081921.dkr.ecr.us-east-1.amazonaws.com/bluegreen-demo:9a67c52ab548c06fd55de3867e447e7ca737d43e
+        image: 467685081921.dkr.ecr.us-east-1.amazonaws.com/bluegreen-demo:3c99547608b6da1c0b763c183d4e721eb30c51fa
 
         ports:
         - containerPort: 80
