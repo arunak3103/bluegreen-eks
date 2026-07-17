@@ -1,4 +1,4 @@
-#  Production-Ready GitOps CI/CD Platform on Amazon EKS
+#  🚀 Production-Ready GitOps CI/CD Platform on Amazon EKS
 
 ## Project Overview
 
